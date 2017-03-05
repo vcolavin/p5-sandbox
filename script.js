@@ -3,6 +3,10 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
   viewportMargin: Infinity
 })
 
+if (Cookies.get('savedCode')) {
+  myCodeMirror.setValue(Cookies.get('savedCode'))
+}
+
 $('.input-area').draggable()
 
 $('#save-button').click(function(e) {

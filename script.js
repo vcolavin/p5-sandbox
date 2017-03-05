@@ -6,5 +6,6 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
 
 $('#render-button').click(function(e) {
   e.preventDefault()
+  console.log(myCodeMirror.getValue())
 })
 

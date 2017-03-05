@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+}
+
+.main-input {
+  display: inline-block;
+  width: 500px;
+  height: 400px;
+}
+
+.render-button {
+  display: inline-block;
+}

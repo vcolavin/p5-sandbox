@@ -3,22 +3,33 @@
   <title>P5 Tutorial</title>
 </head>
 <body>
-  <div class='input-area'>
-    <textarea class='main-input'></textarea>
-    <button
-      id='render-button'
-      class='render-button'>
-      render!
-    </button>
+  <div class='input-area' id='input-area'>
+    <form>
+      <textarea class='main-input' id='main-input'></textarea>
+      <input type='submit'
+        id='render-button'
+        class='render-button'>
+        render!
+      </input>
+    </form>
   </div>
 
-  <link rel='stylesheet' type='text/css' href='style.css'>
+  <!-- if you can't do JS without JQuery you must not be a real programmer -->
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+  <!-- p5 -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js'></script>
+
+  <!-- codemirror -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.24.2/codemirror.js'></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.24.2/codemirror.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.24.2/mode/javascript/javascript.min.js'></script>
+
+  <!-- my stuff finally -->
+  <link rel='stylesheet' type='text/css' href='style.css'>
   <script
     src='script.js'>
   </script>

@@ -1,20 +1,8 @@
 <html>
 <head>
   <title>P5 Sandbox</title>
-</head>
-<body>
-  <div class='input-area' id='input-area'>
-    <form>
-      <textarea class='main-input' id='main-input'></textarea>
-      <input type='submit'
-        id='render-button'
-        class='render-button'>
-        render!
-      </input>
-    </form>
-  </div>
 
-  <!-- if you can't do JS without JQuery you must not be a real programmer -->
+   <!-- if you can't do JS without JQuery you must not be a real programmer -->
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -29,10 +17,27 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.24.2/codemirror.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.24.2/mode/javascript/javascript.min.js'></script>
 
-  <!-- my stuff finally -->
+</head>
+
+<body>
+  <div class='input-area' id='input-area'>
+    <form>
+      <input type='submit'
+        id='render-button'
+        value='render'
+        class='render-button'>
+        render!
+      </input>
+      <button
+      id='save-button'
+      class='save-button'>
+        save
+      </button>
+      <textarea class='main-input' id='main-input'></textarea>
+    </form>
+  </div>
+
+  <script src='script.js'></script>
   <link rel='stylesheet' type='text/css' href='style.css'>
-  <script
-    src='script.js'>
-  </script>
 </body>
 </html>

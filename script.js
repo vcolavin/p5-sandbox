@@ -5,7 +5,22 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
 
 $('.input-area').draggable()
 
+$('#save-button').click(function(e) {
+  e.preventDefault()
+
+})
+
 $('#render-button').click(function(e) {
   e.preventDefault()
-  window.eval(myCodeMirror.getValue())
+  window.eval(
+    myCodeMirror.getValue()
+  )
 })
+
+function setup() {
+
+}
+
+function draw() {
+  ellipse(50, 50, 80, 80);
+}

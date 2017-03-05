@@ -7,7 +7,7 @@ $('.input-area').draggable()
 
 $('#save-button').click(function(e) {
   e.preventDefault()
-
+  Cookies.set('savedCode', myCodeMirror.getValue())
 })
 
 $('#render-button').click(function(e) {

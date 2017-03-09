@@ -2,6 +2,14 @@ html, body {
   margin: 0;
 }
 
+canvas {
+  display: block;
+}
+
+.input-area {
+  position: absolute !important;
+}
+
 .main-input {
   position: absolute;
   left: -100000px;
@@ -16,16 +24,12 @@ html, body {
   padding: 10px;
 }
 
-.render-button {
-/*  position: absolute;
-  bottom: 0;
-*/}
-
 .menu {
   background: white;
   display: inline-block;
   border: 1px solid black;
   border-radius: 10px;
+  padding: 5px;
 }
 
 #handle {

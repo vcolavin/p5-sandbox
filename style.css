@@ -16,18 +16,20 @@ canvas {
 }
 
 .CodeMirror {
+  padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
   height: 400px;
   width: 600px;
   position: absolute;
-  padding: 10px;
 }
 
 .menu {
+  margin: 0;
+  margin-bottom: 5px;
+  border: 1px solid black;
   background: white;
   display: inline-block;
-  border: 1px solid black;
   border-radius: 10px;
   padding: 5px;
 }

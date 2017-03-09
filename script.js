@@ -13,7 +13,12 @@ if (Cookies.get('savedCode')) {
 
 myCodeMirror.setValue(code)
 
-$('.input-area').draggable({ handle: '#handle' })
+runTheCode(myCodeMirror.getValue())
+
+$('.input-area').draggable({
+  handle: '#handle',
+  containment: 'parent'
+})
 
 $('#save-button').click(function(e) {
   e.preventDefault()
@@ -22,11 +27,13 @@ $('#save-button').click(function(e) {
 
 $('#render-button').click(function(e) {
   e.preventDefault()
-  window.eval(
-    myCodeMirror.getValue()
-  )
+  runTheCode(myCodeMirror.getValue())
 })
 
 function setup() {
   createCanvas(windowWidth,windowHeight)
+}
+
+function runTheCode(theCode) {
+  window.eval(theCode)
 }

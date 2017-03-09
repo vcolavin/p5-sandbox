@@ -13,6 +13,7 @@ html, body {
   height: 400px;
   width: 600px;
   position: absolute;
+  padding: 10px;
 }
 
 .render-button {

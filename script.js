@@ -7,7 +7,11 @@ if (Cookies.get('savedCode')) {
   myCodeMirror.setValue(Cookies.get('savedCode'))
 }
 
-$('.input-area').draggable()
+$('.input-area').draggable(
+  {
+    handle: '#handle'
+  }
+)
 
 $('#save-button').click(function(e) {
   e.preventDefault()

@@ -3,7 +3,6 @@
 <head>
   <title>P5 Sandbox</title>
 
-
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <!-- if you can't do JS without JQuery you must not be a real programmer -->
   <script
@@ -26,20 +25,21 @@
 
 <body>
   <div class='input-area' id='input-area'>
-    <form>
+    <menu class='menu' id='handle'>
       <input type='submit'
         id='render-button'
         value='render'
-        class='render-button'>
-        render!
+        class='render-button'
+        tabindex=-1>
       </input>
       <button
       id='save-button'
       class='save-button'>
         save
       </button>
-      <textarea class='main-input' id='main-input'></textarea>
-    </form>
+      <div>&#9798; drag me! &#9731;</div>
+    </menu>
+    <textarea class='main-input' id='main-input'></textarea>
   </div>
 
   <script src='script.js'></script>

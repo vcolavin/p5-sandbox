@@ -7,10 +7,10 @@ var code = `var angles = [ 30, 10, 45, 35, 60, 38, 75, 67 ];
 
 function draw() {
   background(100)
-  translate(width*0.8, height*0.5);
-  rotate(frameCount / -100.0);
   pieChart(300, angles)
 
+  translate(width*0.8, height*0.5);
+  rotate(frameCount / -100.0);
   star(0, 0, 30, 70, 10);
 
   // dragSegment(0, mouseX, mouseY);

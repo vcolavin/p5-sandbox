@@ -25,7 +25,7 @@ function pieChart(diameter, data) {
     var gray = map(i, 0, data.length, 0, 255);
     fill(gray);
     arc(width/2, height/2, diameter, diameter, lastAngle, lastAngle+radians(angles[i]));
-    lastAngle += radians(angles[i]);
+    lastAngle = lastAngle + radians(angles[i]);
   }
 }
 

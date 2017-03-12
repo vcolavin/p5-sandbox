@@ -7,10 +7,10 @@ var code = `var angles = [ 30, 10, 45, 35, 60, 38, 75, 67 ];
 
 function draw() {
   background(100)
-  pieChart(300, angles)
-
   translate(width*0.8, height*0.5);
   rotate(frameCount / -100.0);
+  pieChart(300, angles)
+
   star(0, 0, 30, 70, 10);
 
   // dragSegment(0, mouseX, mouseY);
@@ -54,12 +54,6 @@ for (var i = 0; i < segNum; i++) {
   y[i] = 0;
 }
 
-function setup() {
-  createCanvas(710, 400);
-  strokeWeight(9);
-  stroke(255, 100);
-}
-
 function dragSegment(i, xin, yin) {
   var dx = xin - x[i];
   var dy = yin - y[i];
@@ -76,8 +70,6 @@ function segment(x, y, a) {
   line(0, 0, segLength, 0);
   pop();
 }
-
-
 `
 
 if (Cookies.get('savedCode')) {
